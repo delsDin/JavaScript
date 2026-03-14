@@ -12,6 +12,22 @@ const globalConst = "Je suis une constante globale"
 }
 
 // Portée globale
-console.log(globalVar);
-console.log(globalLet);
-console.log(globalConst);
+//console.log(globalVar);
+//console.log(globalLet);
+//console.log(globalConst);
+
+//Portée du block
+//console.log(blockVar);
+//console.log(blockLet);
+
+function show(){
+    var functionVar = "Je suis une var à portée de bloc";
+    let functionLet = "Je suis un let à portée de bloc";
+    const functionConst = "Je suis un const à portée de bloc";
+}
+show();
+    
+console.log(functionVar); // Lance une ReferenceError
+console.log(functionLet); // Lance une ReferenceError
+console.log(functionConst); // Lance une ReferenceError
+    
