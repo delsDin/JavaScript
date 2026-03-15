@@ -8,6 +8,22 @@ function calculateArea() {
     let area = length * width;
 
     document.getElementById('result').innerText = `The area of the rectangle is: ${area}`;
+}
 
+// Task
+
+
+function groceryTracker(grocery1, grocery2, grocery3){
+    let sum = grocery1 + grocery2 + grocery3;
+    return sum;
+}
+
+function isclicked(){
+    let grocery1 = parseFloat(document.getElementById('grocery1').value);
+    let grocery2 =parseFloat(document.getElementById('grocery2').value);
+    let grocery3 = parseFloat(document.getElementById('grocery3').value);
+    
+    let re = groceryTracker(grocery1, grocery2, grocery3);
+    document.getElementById('results').innerText = `The total amount is : $ ${re}`;
 
 }
